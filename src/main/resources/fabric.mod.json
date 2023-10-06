@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tie_the_vote",
+	"version": "${version}",
+	"name": "Tie_the_Vote",
+	"description": "This mod adds the mobs from the 2023 Mob Vote and all of their features",
+	"authors": [
+		"Afr_dev"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.afr.tie_the_vote.Tie_the_Vote"
+		],
+		"client": [
+			"net.afr.tie_the_vote.Tie_the_Vote_Client"
+		],
+		"fabric-datagen": [
+			"net.afr.tie_the_vote.Tie_the_VoteDataGenerator"
+		]
+	},
+	"mixins": [
+		"tie_the_vote.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
